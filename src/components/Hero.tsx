@@ -78,7 +78,7 @@ export const Hero = () => {
           <EntaButton value="Get free consultation" />
           <button
             type="button"
-            className="border-primary border-2 gap-[10px] flex justify-center w-full sm:w-fit items-center rounded-[36px] font-medium text-primary !leading-[125%] text-base px-8 py-4 shadow-[0px_18px_32px_0px_rgba(245,_126,_39,_0.12)] border-solid"
+            className="border-primary border-2 gap-[10px] flex justify-center w-full sm:w-fit items-center rounded-[36px] font-medium text-primary !leading-[125%] text-base px-8 py-4 shadow-[0px_10px_24px_0px_rgba(127,_86,_217,_0.24)] border-solid"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
