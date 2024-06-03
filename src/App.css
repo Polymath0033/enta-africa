@@ -1,0 +1,3 @@
+ .hero {
+     @apply background: linear-gradient(178deg, rgba(255, 255, 255, 0.19) -79.58%, rgba(255, 255, 255, 0.18) 98.23%);
+ }
