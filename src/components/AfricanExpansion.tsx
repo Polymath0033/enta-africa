@@ -16,7 +16,9 @@ export const AfricanExpansion = () => {
           lore convallis.
         </p>
         <div className="overflow-x-scroll no-scrollbar">
-          <img src={map} alt="EntaAfrica Map " className="" />
+          <div className="w-[800px]">
+            <img src={map} alt="EntaAfrica Map " className="" />
+          </div>
         </div>
       </div>
     </section>
