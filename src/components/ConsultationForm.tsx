@@ -22,7 +22,7 @@ export const ConsultationForm: FC<{ closeModal: () => void }> = ({
           </p>
         </div>
         <div className="mt-6 flex flex-col gap-6">
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             <label
               htmlFor="name"
               className="flex flex-col w-full text-sm font-medium"
@@ -71,7 +71,7 @@ export const ConsultationForm: FC<{ closeModal: () => void }> = ({
             </label>
           </div>
           {/* <select name="countries" id="countries"></select> */}
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             <label
               htmlFor="services"
               className="flex flex-col w-full text-sm font-medium"
@@ -82,12 +82,12 @@ export const ConsultationForm: FC<{ closeModal: () => void }> = ({
                 id="services"
                 className="text-[#828282] py-[10px] px-2 font-normal border border-[#D9DCE0] rounded-lg w-full focus:outline-none focus:border-[#7F55DA]"
               >
-                <option value="Nigeria">Nigeria</option>
-                <option value="Ghana">Ghana</option>
-                <option value="Kenya">Kenya</option>
+                <option value="Businesses">Businesses</option>
+                <option value="Registration">Registration</option>
+                {/* <option value="Kenya">Kenya</option>
                 <option value="South Africa">South Africa</option>
                 <option value="Tanzania">Tanzania</option>
-                <option value="Uganda">Uganda</option>
+                <option value="Uganda">Uganda</option> */}
               </select>
             </label>
             <label
@@ -110,6 +110,8 @@ export const ConsultationForm: FC<{ closeModal: () => void }> = ({
           >
             <span className=" mb-2 text-[#4f4f4f]">Description</span>
             <textarea
+              placeholder="Input description"
+              rows={4}
               name="description"
               className="text-[#828282] py-[10px] px-2 font-normal border border-[#D9DCE0] rounded-lg w-full focus:outline-none focus:border-[#7F55DA]"
               id="description"

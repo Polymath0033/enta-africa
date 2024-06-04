@@ -1,7 +1,10 @@
 import { EntaUI } from "./EntaUI";
 import image from "../assets/earth-with-plane.png";
 import { EntaButton } from "./EntaButton";
-export const BeautifulAfrica = () => {
+import { FC } from "react";
+export const BeautifulAfrica: FC<{ showConsultation: () => void }> = ({
+  showConsultation,
+}) => {
   return (
     <article className="px-8 sm:px-28 py-24 bg-[rgba(127,_85,_218,_0.02)] ">
       <div className="flex custom-container flex-col sm:flex-row gap-24">
@@ -18,7 +21,7 @@ export const BeautifulAfrica = () => {
             Lorem ipsum dolor sit amet consectetur. Integer imperdiet venenatis
             ornare vitae et lorem sed.
           </p>
-          <EntaButton value="Speak to us" />
+          <EntaButton value="Speak to us" onClick={showConsultation} />
         </div>
         <div className="flex flex-col p-4 bg-[rgba(127,_85,_218,_0.08)] rounded-2xl w-full ">
           <img

@@ -6,7 +6,10 @@ import southAfrica from "../assets/south-africa.svg";
 import tanzania from "../assets/tanzania.svg";
 import uganda from "../assets/uganda.svg";
 import { EntaButton } from "./EntaButton";
-export const Hero = () => {
+import { FC } from "react";
+export const Hero: FC<{ showConsultation: () => void }> = ({
+  showConsultation,
+}) => {
   return (
     <main
       className={`overflow-hidden  hero w-full h-fit   py-20 pb-32 !bg-contain bg-no-repeat bg-center `}
@@ -75,7 +78,10 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row w-4/5 mx-auto sm:w-full gap-8 justify-center mt-16">
-          <EntaButton value="Get free consultation" />
+          <EntaButton
+            value="Get free consultation"
+            onClick={showConsultation}
+          />
           <button
             type="button"
             className="border-primary border-2 gap-[10px] flex justify-center w-full sm:w-fit items-center rounded-[36px] font-medium text-primary !leading-[125%] text-base px-8 py-4 shadow-[0px_10px_24px_0px_rgba(127,_86,_217,_0.24)] border-solid"

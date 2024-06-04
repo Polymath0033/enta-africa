@@ -22,7 +22,7 @@ function App() {
       {showModal && <ConsultationForm closeModal={closeModal} />}
       <Header />
       <div className="relative  w-full overflow-hidden top-[109.33px]">
-        <Hero />
+        <Hero showConsultation={closeModal} />
         <section className="px-8 sm:px-28 custom-container py-16 flex justify-center">
           <ul className="py-8 px-12 rounded-[48px] sm:rounded-[102px] flex flex-col justify-center items-center sm:flex-row gap-[10px] border-[rgba(127,_85,_218,_0.12)] border border-solid bg-[rgba(127,_85,_218,_0.04)]  ">
             <li className="flex flex-col gap-3 items-center justify-center sm:justify-between pb-8 sm:border-b-0 sm:pb-0 sm:pr-12 border-b sm:border-r border-[#E0E0E0]">
@@ -47,7 +47,7 @@ function App() {
         </section>
         <RegisterCompany />
         <CompanyImages />
-        <BeautifulAfrica />
+        <BeautifulAfrica showConsultation={closeModal} />
         <Blog />
         <AfricanExpansion />
         <Footer />
