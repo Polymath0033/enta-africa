@@ -33,3 +33,8 @@
     ),
     url("./assets/grid-net.png");
 }
+
+.blur {
+  -webkit-backdrop-filter: blur(9.078948020935059px);
+  backdrop-filter: blur(9.078948020935059px);
+}

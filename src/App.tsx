@@ -6,13 +6,20 @@ import { BeautifulAfrica } from "./components/BeautifulAfrica";
 import { Blog } from "./components/Blog";
 import { AfricanExpansion } from "./components/AfricanExpansion";
 import { Footer } from "./components/Footer";
+import { ConsultationForm } from "./components/ConsultationForm";
+import { useState } from "react";
+
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // const routes = createBrowserRouter([
 //   {path: "/", element: <App />}
 // ]);
+
 function App() {
+  const [showModal, setShowModal] = useState(true);
+  const closeModal = () => setShowModal(!showModal);
   return (
     <>
+      {showModal && <ConsultationForm closeModal={closeModal} />}
       <Header />
       <div className="relative  w-full overflow-hidden top-[109.33px]">
         <Hero />

@@ -1,3 +1,20 @@
- .hero {
-     @apply background: linear-gradient(178deg, rgba(255, 255, 255, 0.19) -79.58%, rgba(255, 255, 255, 0.18) 98.23%);
- }
+/* .hero {
+  @apply background: linear-gradient(178deg, rgba(255, 255, 255, 0.19) -79.58%, rgba(255, 255, 255, 0.18) 98.23%);
+} */
+
+.modal::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.modal::-webkit-scrollbar-track {
+  border-radius: 16px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background-color: #7f55da;
+  height: 10px;
+  background-clip: content-box;
+}
