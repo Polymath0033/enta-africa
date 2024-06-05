@@ -12,18 +12,17 @@ export const BeautifulAfrica: FC<{ showConsultation: () => void }> = ({
           <EntaUI text="Start the story" />
           <h2 className="text-xl sm:text-[28px] !leading-[168.75%] text-[#333] font-semibold">
             Set your
-            <span className="bg-[linear-gradient(96deg,_#7F55DA_68.84%,_#1F0656_106.65%)] bg-clip-text text-transparent">
+            <span className="bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)] bg-clip-text text-transparent">
               beautiful Africa expansion story{"   "}
             </span>
             in motion with a free consultation with our expert team
           </h2>
           <p className="text-[#434343] text-base mb-6 !leading-[175%] font-normal ">
-            Lorem ipsum dolor sit amet consectetur. Integer imperdiet venenatis
-            ornare vitae et lorem sed.
+            Ready to speak, when you are.
           </p>
           <EntaButton value="Speak to us" onClick={showConsultation} />
         </div>
-        <div className="flex flex-col p-4 bg-[rgba(127,_85,_218,_0.08)] rounded-2xl w-full ">
+        <div className="flex flex-col p-4 bg-[rgba(227,_62,_51,_0.08)] rounded-2xl w-full ">
           <img
             src={image}
             alt="A man pressing phone"

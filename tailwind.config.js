@@ -10,7 +10,7 @@ export default {
         sans: ["poppins", "sans-serif"],
       },
       colors: {
-        primary: "#7F55DA",
+        primary: "#E33E33",
       },
       backgroundImage: {
         hero: "linear-gradient(178deg, rgba(255, 255, 255, 0.19) -79.58%, rgba(255, 255, 255, 0.18) 98.23%)",

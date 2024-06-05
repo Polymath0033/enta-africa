@@ -40,7 +40,7 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
               <h1 className="text-[#333333] text-center ">
                 Your Gateway to Africa.
               </h1>
-              <h2 className="text-center  bg-clip-text text-transparent bg-[linear-gradient(96deg,_#7F55DA_68.84%,_#1F0656_106.65%)]">
+              <h2 className="text-center  bg-clip-text text-transparent bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)]">
                 Incorporate your company
               </h2>
             </div>
@@ -82,36 +82,6 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
             value="Get free consultation"
             onClick={showConsultation}
           />
-          <button
-            type="button"
-            className="border-primary border-2 gap-[10px] flex justify-center w-full sm:w-fit items-center rounded-[36px] font-medium text-primary !leading-[125%] text-base px-8 py-4 shadow-[0px_10px_24px_0px_rgba(127,_86,_217,_0.24)] border-solid"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="23"
-              height="22"
-              viewBox="0 0 23 22"
-              fill="none"
-            >
-              <path
-                opacity="0.4"
-                d="M8.84167 11V9.64333C8.84167 7.89249 10.0792 7.18666 11.5917 8.05749L12.765 8.73582L13.9383 9.41416C15.4508 10.285 15.4508 11.715 13.9383 12.5858L12.765 13.2642L11.5917 13.9425C10.0792 14.8133 8.84167 14.0983 8.84167 12.3567V11Z"
-                stroke="#7F55DA"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M11.5 20.1667C16.5626 20.1667 20.6666 16.0626 20.6666 11C20.6666 5.9374 16.5626 1.83334 11.5 1.83334C6.43737 1.83334 2.33331 5.9374 2.33331 11C2.33331 16.0626 6.43737 20.1667 11.5 20.1667Z"
-                stroke="#7F55DA"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            Play demo
-          </button>
         </div>
       </div>
     </main>

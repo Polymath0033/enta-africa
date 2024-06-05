@@ -1,10 +1,8 @@
 import { EntaUI } from "./EntaUI";
-import boltShift from "../assets/bolt-shift.png";
-import lightBox from "../assets/light-box.png";
-import featherDev from "../assets/feather-dev.png";
-import spherule from "../assets/spherule.png";
-import globalBank from "../assets/global-bank.png";
-import neitzsche from "../assets/neitzsche.png";
+import rova from "../assets/image-1.png";
+import evolveCredit from "../assets/image-2.svg";
+import finnaProtocol from "../assets/image-3.svg";
+import heala from "../assets/image-4.svg";
 export const CompanyImages = () => {
   return (
     <section className="px-8 sm:px-24 py-24 ">
@@ -12,7 +10,7 @@ export const CompanyImages = () => {
         <EntaUI text="Meet our amazing clients" />
         <h2 className="text-2xl text-center mx-auto w-full sm:text-[32px] font-semibold !leading-[150%] text-[#333] ">
           A few Companies{" "}
-          <span className="bg-[linear-gradient(96deg,_#7F55DA_68.84%,_#1F0656_106.65%)] bg-clip-text text-transparent">
+          <span className="bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)] bg-clip-text text-transparent">
             think we are Great
           </span>
         </h2>
@@ -27,23 +25,23 @@ export const CompanyImages = () => {
                 <ul className="w-full flex gap-12">
                   <li>
                     {" "}
-                    <img src={boltShift} alt="Bolt shift" />{" "}
+                    <img src={rova} alt="Rova" />{" "}
                   </li>
                   <li>
-                    <img src={lightBox} alt="Light box" />
+                    <img src={evolveCredit} alt="Evolve Credit" />
                   </li>
                   <li>
-                    <img src={featherDev} alt="Feather dev" />
+                    <img src={finnaProtocol} alt="Finna Protocol" />
                   </li>
                   <li>
-                    <img src={spherule} alt="Spherule" />
+                    <img src={heala} alt="Heala" />
                   </li>
-                  <li>
+                  {/* <li>
                     <img src={globalBank} alt="Global bank" />
                   </li>
                   <li>
                     <img src={neitzsche} alt="Neitzsche" />
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             ))}

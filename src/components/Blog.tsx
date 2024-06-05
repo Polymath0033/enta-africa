@@ -5,14 +5,14 @@ export const Blog = () => {
     <section className="px-8 custom-container sm:px-28 py-24 flex flex-col gap-6">
       <h2 className="text-[#333] text-center text-2xl sm:text-[32px] font-semibold !leading-[162.5%] ">
         Explore news from{" "}
-        <span className="bg-[linear-gradient(96deg,_#7F55DA_68.84%,_#1F0656_106.65%)] text-transparent bg-clip-text ">
+        <span className="bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)] text-transparent bg-clip-text ">
           {" "}
           EntaAfrica
         </span>
       </h2>
       <p className="text-sm sm:text-base text-center text-[#434343] w-full md:w-3/5 mx-auto !leading-[157.5%]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant
-        dui consectetur sed nam amet, magna. Iet se
+        Authentic gists about doing business in Africa from African
+        entrepreneurs
       </p>
       <div className="overflow-x-scroll w-full no-scrollbar">
         <ul className="mt-10 w-max  flex gap-6">
@@ -54,7 +54,7 @@ export const Blog = () => {
                 >
                   <path
                     d="M12.0254 5.44165L17.0837 10.5L12.0254 15.5583"
-                    stroke="#7F55DA"
+                    stroke="#E33E33"
                     strokeWidth="1.5"
                     strokeMiterlimit="10"
                     strokeLinecap="round"
@@ -62,7 +62,7 @@ export const Blog = () => {
                   />
                   <path
                     d="M2.91699 10.5H16.942"
-                    stroke="#7F55DA"
+                    stroke="#E33E33"
                     strokeWidth="1.5"
                     strokeMiterlimit="10"
                     strokeLinecap="round"

@@ -11,7 +11,7 @@ export const ConsultationForm: FC<{ closeModal: () => void }> = ({
         <div>
           <h1 className="font-semibold text-[28px] text-[#333] text-center">
             Get a{" "}
-            <span className="text-transparent bg-clip-text bg-[linear-gradient(96deg,_#7F55DA_68.84%,_#1F0656_106.65%)]">
+            <span className="text-transparent bg-clip-text bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)]">
               Free
             </span>{" "}
             Consultation
