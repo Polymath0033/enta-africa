@@ -11,7 +11,7 @@ export const BeautifulAfrica: FC<{ showConsultation: () => void }> = ({
         <div className="flex flex-col gap-6 w-full justify-center items-start grow">
           <EntaUI text="Start the story" />
           <h2 className="text-xl sm:text-[28px] !leading-[168.75%] text-[#333] font-semibold">
-            Set your
+            Set your{" "}
             <span className="bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)] bg-clip-text text-transparent">
               beautiful Africa expansion story{"   "}
             </span>

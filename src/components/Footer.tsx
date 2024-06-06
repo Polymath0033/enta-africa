@@ -1,4 +1,5 @@
 export const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="px-8 custom-container sm:px-28 ">
       <div className="flex flex-col sm:flex-row pt-[41px] pb-[35px] items-start justify-between w-full">
@@ -133,7 +134,7 @@ export const Footer = () => {
       </div>
       <div className="border-t-[#F8F8FA] w-full sm:w-4/5 mx-auto border-t-2 py-6">
         <p className="text-[#797B89] text-sm !leading-[166.667%] text-center">
-          © 2021 EntaAfrica. All rights reserved
+          © {year} EntaAfrica. All rights reserved
         </p>
       </div>
     </footer>
