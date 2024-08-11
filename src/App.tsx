@@ -16,11 +16,23 @@ import { useState } from "react";
 
 function App() {
   const [showModal, setShowModal] = useState(true);
-  const closeModal = () => setShowModal(!showModal);
+  const [services, setServices] = useState<"businesses" | "registration">(
+    "businesses"
+  );
+  const closeModal = () => {
+    setServices("businesses");
+    setShowModal(!showModal);
+  };
+  const registerServicesHandler = () => {
+    setServices("registration");
+    setShowModal(true);
+  };
   return (
     <>
-      {showModal && <ConsultationForm closeModal={closeModal} />}
-      <Header />
+      {showModal && (
+        <ConsultationForm closeModal={closeModal} services={services} />
+      )}
+      <Header closeModal={registerServicesHandler} />
       <div className="relative  w-full overflow-hidden top-[109.33px]">
         <Hero showConsultation={closeModal} />
         <section className="px-8 sm:px-28 custom-container py-16 flex justify-center">
@@ -45,7 +57,7 @@ function App() {
             </li>
           </ul>
         </section>
-        <RegisterCompany />
+        <RegisterCompany registerHandler={registerServicesHandler} />
         <CompanyImages />
         <BeautifulAfrica showConsultation={closeModal} />
         <Blog />

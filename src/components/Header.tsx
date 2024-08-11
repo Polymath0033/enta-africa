@@ -1,8 +1,8 @@
 import { EntaButton } from "./EntaButton";
 import { Logo } from "./Logo";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { Side } from "./Side";
-export const Header = () => {
+export const Header: FC<{ closeModal: () => void }> = ({ closeModal }) => {
   const [sidebar, setSidebar] = useState(false);
   const toggleSidebar = () => setSidebar(!sidebar);
   return (
@@ -17,7 +17,11 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-        <EntaButton value="Get started" className="hidden sm:block" />
+        <EntaButton
+          onClick={closeModal}
+          value="Get started"
+          className="hidden sm:block"
+        />
         <button
           type="button"
           onClick={toggleSidebar}

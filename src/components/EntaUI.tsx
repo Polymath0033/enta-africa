@@ -56,7 +56,7 @@ export const EntaUI: FC<{
             stroke="#E33E33"
             strokeWidth="1.5"
             strokeLinecap="round"
-            stroke-linejoin="round"
+            strokeLinejoin="round"
           />
           <path
             d="M13 12.9167H18"

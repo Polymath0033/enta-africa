@@ -1,7 +1,10 @@
+import { FC } from "react";
 import image from "../assets/man-with-phone.png";
 import { EntaButton } from "./EntaButton";
 import { EntaUI } from "./EntaUI";
-export const RegisterCompany = () => {
+export const RegisterCompany: FC<{ registerHandler: () => void }> = ({
+  registerHandler,
+}) => {
   return (
     <article className="px-8 sm:px-28 custom-container py-24 flex flex-col sm:flex-row gap-24">
       <div className="flex flex-col order-2 sm:order-1 p-4 bg-[rgba(227,_62,_51,_0.08)] rounded-2xl w-full ">
@@ -19,7 +22,7 @@ export const RegisterCompany = () => {
           You provide the required documentation. We accelerate your
           registration.
         </p>
-        <EntaButton value="Ready to Enta?" />
+        <EntaButton onClick={registerHandler} value="Ready to Enta?" />
       </div>
     </article>
   );
