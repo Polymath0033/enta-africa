@@ -1,11 +1,11 @@
-import map from "../assets/map.svg";
+import map from "../assets/map-green.svg";
 export const AfricanExpansion = () => {
   return (
-    <section className="mt-16 px-8 sm:px-28 py-24  border-b border-[#E8E9ED] bg-[rgba(227,_62,_51,_0.04)]">
+    <section className="mt-16 px-8 sm:px-28 py-24  border-b border-[#E8E9ED] bg-[rgba(0,_146,_68,_0.04)]">
       <div className="custom-container">
         <h2 className="text-2xl sm:text-[32px] capitalize text-[#333] !leading-[149.738%] font-semibold text-center ">
           Let us activate your{" "}
-          <span className="text-transparent bg-clip-text bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)]">
+          <span className="text-transparent bg-clip-text bg-[linear-gradient(91deg,_#009244_-0.95%,_#004d40_100.32%)] ">
             African expansion
           </span>{" "}
           with ease.

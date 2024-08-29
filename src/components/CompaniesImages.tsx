@@ -10,7 +10,7 @@ export const CompanyImages = () => {
         <EntaUI text="Meet our amazing clients" />
         <h2 className="text-2xl text-center mx-auto w-full sm:text-[32px] font-semibold !leading-[150%] text-[#333] ">
           A few Companies{" "}
-          <span className="bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)] bg-clip-text text-transparent">
+          <span className="bg-[linear-gradient(91deg,_#009244_-0.95%,_#004d40_100.32%)] bg-clip-text text-transparent">
             think we are Great
           </span>
         </h2>

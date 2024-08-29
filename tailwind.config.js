@@ -10,10 +10,15 @@ export default {
         sans: ["poppins", "sans-serif"],
       },
       colors: {
-        primary: "#E33E33",
+        // #00C65E
+        primary: "#009244",
+        "light-primary": "#0092440A",
       },
       backgroundImage: {
         hero: "linear-gradient(178deg, rgba(255, 255, 255, 0.19) -79.58%, rgba(255, 255, 255, 0.18) 98.23%)",
+        blog: 'url("./src/assets/blog-4.png")',
+        //services:
+        //'url("./src/assets/vertical-shot-small-isolated-house-shore-sea.jpg") ',
       },
       keyframes: {
         marquee: {

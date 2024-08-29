@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "consultations": {
+      ".read": "now < 1725836400000",
+      ".write": "now < 1725836400000"
+    },
+    "$other": {
+      ".read": "now < 1725836400000",
+      ".write": false
+    }
+  }
+}
