@@ -29,7 +29,10 @@ export const Services: React.FC = () => {
         </div>
       </section>
 
-      <section className="custom-container px-8 sm:px-28 py-24">
+      <section
+        id="#incorporation-services"
+        className="custom-container px-8 sm:px-28 py-24"
+      >
         <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
           Seamless Business Incorporation Across Africa
         </h3>
@@ -132,7 +135,10 @@ export const Services: React.FC = () => {
         </div>
       </section>
 
-      <section className=" custom-container px-8 sm:px-28 py-24">
+      <section
+        id="#licenses-services"
+        className=" custom-container px-8 sm:px-28 py-24"
+      >
         <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
           Obtain Essential Licenses to Operate in Africa
         </h3>
@@ -227,7 +233,10 @@ export const Services: React.FC = () => {
           </ul>
         </div>
       </section>
-      <section className=" custom-container px-8 sm:px-28 py-24">
+      <section
+        id="#acquisition-services"
+        className=" custom-container px-8 sm:px-28 py-24"
+      >
         <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
           Navigate Mergers and Acquisitions with Confidence
         </h3>
@@ -284,16 +293,6 @@ export const Services: React.FC = () => {
           Why Work with Us:
         </h4>
         <div className="flex justify-center items-center mx-auto">
-          {/* 
-: 
-: 
-: 
-: 
-
-: 
-: 
-: 
- */}
           <ul className="grid mt-8 gap-5 justify-center mx-auto grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
             {[
               {

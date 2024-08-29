@@ -2,6 +2,7 @@ import React from "react";
 import buildingIcon from "../assets/building-solid.svg";
 import fileAltIcon from "../assets/file-lines-solid.svg";
 import handshakeIcon from "../assets/handshake-solid.svg";
+import { Link } from "react-router-dom";
 export const ServiceOverview: React.FC = () => {
   return (
     <div className="px-8 sm:px-28 custom-container py-24  mx-auto">
@@ -33,12 +34,12 @@ export const ServiceOverview: React.FC = () => {
               got you covered. We’ll handle all the paperwork and legalities, so
               you can focus on your vision.
             </p>
-            <a
-              href="/incorporation-services"
+            <Link
+              to="services/#incorporation-services"
               className="text-primary hover:underline"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex items-start mb-4">
@@ -58,12 +59,12 @@ export const ServiceOverview: React.FC = () => {
               fintech world. Our team ensures you get all the necessary licenses
               without the hassle.
             </p>
-            <a
-              href="/incorporation-services"
+            <Link
+              to="services/#licenses-services"
               className="text-primary hover:underline"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex items-start mb-4">
@@ -83,12 +84,12 @@ export const ServiceOverview: React.FC = () => {
               comprehensive support from start to finish, making sure every step
               is smooth and compliant.
             </p>
-            <a
-              href="/incorporation-services"
+            <Link
+              to="services/#acquisition-services"
               className="text-primary hover:underline"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
