@@ -1,8 +1,8 @@
 import logo from "../assets/enta-afrika.png";
 export const Logo = () => {
   return (
-    <div className="h-[56px] ">
-      <img src={logo} className="w-full " alt="EntaAfrika" />
+    <div className="h-[56px] w-[120px] ">
+      <img src={logo} className="w-full h-full" alt="EntaAfrika" />
     </div>
 
     // <div>
