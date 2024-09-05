@@ -17,9 +17,22 @@ import thumbsUpIcon from "../assets/thumbs-up-solid.svg";
 import syncAltIcon from "../assets/rotate-solid.svg";
 import industryIcon from "../assets/industry-solid.svg";
 import clockIcon from "../assets/clock-solid.svg";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 // import shieldAltIcon from '../assets/shield-halved-solid.svg';
 
 export const Services: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <main>
       <section className="bg-services bg-light-primary !max-h-[400px] h-[400px] md:h-[700px] bg-cover ">
