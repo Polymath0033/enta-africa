@@ -22,14 +22,14 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
         <div>
           <div className="font-semibold text-3xl sm:text-5xl mt-4 relative w-full sm:w-3/4 mx-auto !leading-[162.5%]">
             {/* country logo */}
-            <div className="absolute rounded-[49px] -left-1 sm:-left-4 top-[30%]">
+            <div className="absolute rounded-[49px] left-2 sm:-left-4 top-6 sm:top-[30%]">
               <img
                 src={kenya}
                 alt="Kenya"
                 className="w-full h-full !rounded-[49px]"
               />
             </div>
-            <div className="absolute -right-1 sm:-right-4 top-[30%]">
+            <div className="absolute right-2 sm:-right-4 top-6 sm:top-[30%]">
               <img
                 src={nigeria}
                 alt="Nigeria flag"
@@ -37,10 +37,10 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
               />
             </div>
             <div className="w-full ">
-              <h1 className="text-black text-center text-[38px]">
+              <h1 className="text-black text-center text-3xl sm:text-[38px]">
                 Unlock Your Business Potential in Africa.
               </h1>
-              <h2 className="text-center text-3xl  bg-clip-text text-transparent bg-[linear-gradient(91deg,_#009244_-0.95%,_#004d40_100.32%)]">
+              <h2 className="text-center text-2xl sm:text-3xl  bg-clip-text text-transparent bg-[linear-gradient(91deg,_#009244_-0.95%,_#004d40_100.32%)]">
                 Incorporation, Licensing, and Acquisition Services Across the
                 Continent
               </h2>

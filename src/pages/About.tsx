@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import handShakeIcon from "../assets/handshake-solid.svg";
 import starIcon from "../assets/star-solid.svg";
 import lightBulbIcon from "../assets/lightbulb-solid.svg";
@@ -6,17 +6,18 @@ import userFriendsIcon from "../assets/user-friends-solid.svg";
 //import expertTeam from "../assets/vintage-style-people-working-office-with-computers.jpg";
 import { OurStory } from "../components/OurStory";
 import { ExpertTeam } from "../components/ExpertTeam";
+import { Link } from "react-router-dom";
 export const About: React.FC = () => {
-  const message = "Important Update on Your Account";
-  const emailSubject = useMemo(() => {
-    return encodeURIComponent(message);
-  }, [message]);
+  // const message = "Important Update on Your Account";
+  // const emailSubject = useMemo(() => {
+  //   return encodeURIComponent(message);
+  // }, [message]);
 
-  // Example of generating a mailto link with the encoded subject
-  const mailtoLink = useMemo(() => {
-    const email = "oo@entaafrika.com";
-    return `mailto:${email}?subject=${emailSubject}`;
-  }, [emailSubject]);
+  // // Example of generating a mailto link with the encoded subject
+  // const mailtoLink = useMemo(() => {
+  //   const email = "oo@entaafrika.com";
+  //   return `mailto:${email}?subject=${emailSubject}`;
+  // }, [emailSubject]);
   return (
     <>
       <main>
@@ -98,14 +99,14 @@ export const About: React.FC = () => {
               {/* <p className="mb-4">
               Want to learn more about Enta Afrika? Get in Touch with us!
             </p> */}
-              <a
-                href={mailtoLink}
+              <Link
+                to="/#contact-us"
                 //href="mailto:oo@entaafrika.com"
                 target="_blank"
                 className="bg-[#009244] text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#009244] hover:bg-green-700 transition duration-300"
               >
                 Get in Touch
-              </a>
+              </Link>
             </div>
           </section>
         </div>

@@ -25,31 +25,42 @@ export const Services: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+    const scrollToElement = () => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
       }
-    }
-  }, [location]);
+    };
+
+    scrollToElement(); // Scroll to the section on mount
+
+    // Retry scrolling after the component is fully rendered
+    setTimeout(() => {
+      scrollToElement();
+    }, 100);
+  }, [location.hash]);
 
   return (
     <main>
-      <section className="bg-services bg-light-primary !max-h-[400px] h-[400px] md:h-[700px] bg-cover ">
-        <div className="flex flex-col justify-center items-center custom-container px-8 sm:px-16 md:px-28 py-24">
-          <h1 className=" font-bold text-6xl text-primary ">Our services</h1>
+      <section className="bg-services bg-light-primary  h-[350px] md:h-[500px] bg-cover ">
+        <div className="flex flex-col justify-center items-center custom-container px-8 sm:px-16 md:px-28 py-24 h-full ">
+          <h1 className=" font-bold text-3xl sm:text-6xl text-primary ">
+            Our services
+          </h1>
           <p className="">What we offer at Enta Afrika</p>
         </div>
       </section>
 
       <section
-        id="#incorporation-services"
-        className="custom-container px-8 sm:px-16 md:px-28 py-24"
+        id="incorporation-services"
+        className="custom-container px-8 sm:px-16 md:px-28 py-24 scroll-smooth"
       >
-        <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
+        <h3 className="text-primary text-center text-2xl sm:text-3xl md:text-4xl leading-2 font-semibold uppercase">
           Seamless Business Incorporation Across Africa
         </h3>
-        <p className="text-center font-medium mb-3">
+        <p className="text-center text-base sm:font-medium mb-3 mt-4">
           Setting up a business in Africa has never been easier. Enta Afrika
           specializes in incorporating businesses in Nigeria, Ghana, Kenya, and
           Rwanda. We handle all the legal and administrative tasks, so you can
@@ -149,13 +160,13 @@ export const Services: React.FC = () => {
       </section>
 
       <section
-        id="#licenses-services"
-        className=" custom-container px-8 sm:px-16 md:px-28 py-24"
+        id="licenses-services"
+        className=" custom-container px-8 sm:px-16 md:px-28 py-24 scroll-smooth"
       >
-        <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
+        <h3 className="text-primary text-center text-2xl sm:text-3xl md:text-4xl leading-2 font-semibold uppercase">
           Obtain Essential Licenses to Operate in Africa
         </h3>
-        <p className="text-center font-medium mb-3">
+        <p className="text-center text-base sm:font-medium mb-3 mt-4">
           Obtaining the necessary licenses to operate in Africa can be
           challenging. Enta Afrika specializes in securing licenses for various
           industries, with a focus on fintech companies. We ensure you meet all
@@ -247,13 +258,13 @@ export const Services: React.FC = () => {
         </div>
       </section>
       <section
-        id="#acquisition-services"
-        className=" custom-container px-8 sm:px-16 md:px-28 py-24"
+        id="acquisition-services"
+        className=" custom-container px-8 sm:px-16 md:px-28 py-24 scroll-smooth"
       >
-        <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
+        <h3 className="text-primary text-center text-2xl sm:text-3xl md:text-4xl leading-2 font-semibold uppercase">
           Navigate Mergers and Acquisitions with Confidence
         </h3>
-        <p className="text-center font-medium mb-3">
+        <p className="text-center text-base sm:font-medium mb-3 mt-4">
           Expanding your business through mergers and acquisitions in Africa
           requires expert guidance. Enta Afrika provides comprehensive advisory
           services, ensuring successful and compliant transactions.
@@ -261,7 +272,6 @@ export const Services: React.FC = () => {
         <h4 className="text-center pt-12 font-medium text-3xl">
           Our Acquisition Services:
         </h4>
-
         <ul className="grid mt-8 gap-5 justify-center grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
           {[
             {

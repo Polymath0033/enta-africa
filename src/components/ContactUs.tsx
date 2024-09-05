@@ -53,9 +53,12 @@ export const ContactUs: FC = () => {
       });
   };
   return (
-    <div className="w-full h-screen px-8 sm:px-16 md:px-28 py-24 flex items-center justify-center">
+    <div
+      className="w-full h-screen px-8 sm:px-16 md:px-28 py-24 flex items-center justify-center"
+      id="contact-us"
+    >
       <form
-        className=" w-full sm:w-[calc(100%_-_100px)] mx-auto md:w-3/5 bg-white p-8  rounded-lg shadow-lg"
+        className=" w-full sm:w-[calc(100%_-_100px)] mx-auto md:w-3/5 bg-white p-4 sm:p-8  rounded-lg shadow-sm sm:shadow-lg"
         onSubmit={handleSubmit}
       >
         <h2 className="text-2xl font-bold text-center">Contact Us</h2>

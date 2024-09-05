@@ -35,7 +35,7 @@ export const ServiceOverview: React.FC = () => {
               you can focus on your vision.
             </p>
             <Link
-              to="services/#incorporation-services"
+              to="services#incorporation-services"
               className="text-primary hover:underline"
             >
               Learn More
@@ -60,7 +60,7 @@ export const ServiceOverview: React.FC = () => {
               without the hassle.
             </p>
             <Link
-              to="services/#licenses-services"
+              to="services#licenses-services"
               className="text-primary hover:underline"
             >
               Learn More
@@ -85,7 +85,7 @@ export const ServiceOverview: React.FC = () => {
               is smooth and compliant.
             </p>
             <Link
-              to="services/#acquisition-services"
+              to="/services#acquisition-services"
               className="text-primary hover:underline"
             >
               Learn More

@@ -1,5 +1,5 @@
-import { FC, useContext } from "react";
-
+import { FC, useContext, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Hero } from "../components/Hero";
 import { RegisterCompany } from "../components/RegisterCompany";
 import { CompanyImages } from "../components/CompaniesImages";
@@ -14,7 +14,25 @@ import { ContactUs } from "../components/ContactUs";
 
 export const Home: FC = () => {
   const storeCtx = useContext(StoreContext);
+  const location = useLocation();
 
+  useEffect(() => {
+    const scrollToElement = () => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    scrollToElement(); // Scroll to the section on mount
+
+    // Retry scrolling after the component is fully rendered
+    setTimeout(() => {
+      scrollToElement();
+    }, 100);
+  }, [location.hash]);
   const closeModal = () => {
     storeCtx.serviceHandler("businesses");
     storeCtx.modalHandler();
