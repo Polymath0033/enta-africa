@@ -5,6 +5,8 @@ export default {
     extend: {
       animation: {
         marquee: "marquee var(--duration, 15s) linear infinite",
+        "toast-in": "toast-in 0.3s forwards",
+        "toast-out": "toast-out 0.3s forwards",
       },
       fontFamily: {
         sans: ["poppins", "sans-serif"],
@@ -24,6 +26,14 @@ export default {
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "toast-in": {
+          "0%": { opacity: "0", transform: "translate(-50%, -20px)" },
+          "100%": { opacity: "1", transform: "translate(-50%, 0)" },
+        },
+        "toast-out": {
+          "0%": { opacity: "1", transform: "translate(-50%, 0)" },
+          "100%": { opacity: "0", transform: "translateY(50%, -20px)" },
         },
       },
     },

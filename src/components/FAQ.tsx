@@ -37,7 +37,7 @@ export const FAQ: React.FC = () => {
     setFaqs(updatedFAQ);
   };
   return (
-    <div className="px-8 sm:px-28 custom-container py-24  mx-auto">
+    <div className="px-8 sm:px-16 md:px-28 custom-container py-24  mx-auto">
       <h1 className="text-4xl font-bold mb-8 text-center text-black">
         Frequently Asked Questions
       </h1>

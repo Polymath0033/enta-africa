@@ -22,14 +22,14 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
         <div>
           <div className="font-semibold text-3xl sm:text-5xl mt-4 relative w-full sm:w-3/4 mx-auto !leading-[162.5%]">
             {/* country logo */}
-            <div className="absolute rounded-[49px] -left-1 sm:-left-4 top-1/4 sm:top-[30%]">
+            <div className="absolute rounded-[49px] -left-1 sm:-left-4 top-[30%]">
               <img
                 src={kenya}
                 alt="Kenya"
                 className="w-full h-full !rounded-[49px]"
               />
             </div>
-            <div className="absolute -right-1 sm:-right-4 top-1/4 sm:top-[30%]">
+            <div className="absolute -right-1 sm:-right-4 top-[30%]">
               <img
                 src={nigeria}
                 alt="Nigeria flag"
@@ -47,14 +47,14 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
             </div>
           </div>
           <div className="w-4/5 mx-auto flex relative justify-center mt-4">
-            <div className="absolute rounded-[49px]  -left-10 -top-4">
+            <div className="absolute rounded-[49px]  -left-10 top-6 sm:-top-4">
               <img
                 src={ghana}
                 alt="Ghana"
                 className="w-full h-full !rounded-[49px]"
               />
             </div>
-            <div className="absolute -right-10 -top-4">
+            <div className="absolute -right-10 top-6 sm:-top-4">
               <img src={rwanda} alt="rwanda flag" className="!rounded-[49px]" />
             </div>
             <div className="absolute rounded-[49px] left-10 sm:left-24 -bottom-10">

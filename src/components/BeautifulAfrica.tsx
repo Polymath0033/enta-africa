@@ -6,7 +6,7 @@ export const BeautifulAfrica: FC<{ showConsultation: () => void }> = ({
   showConsultation,
 }) => {
   return (
-    <article className="px-8 sm:px-28 py-24 bg-[rgba(127,_85,_218,_0.02)] ">
+    <article className="px-8 sm:px-16 md:px-28 py-24 bg-[rgba(127,_85,_218,_0.02)] ">
       <div className="flex custom-container flex-col sm:flex-row gap-24">
         <div className="flex flex-col gap-6 w-full justify-center items-start grow">
           <EntaUI text="Start the story" />

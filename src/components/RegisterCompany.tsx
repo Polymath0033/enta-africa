@@ -6,7 +6,7 @@ export const RegisterCompany: FC<{ registerHandler: () => void }> = ({
   registerHandler,
 }) => {
   return (
-    <article className="px-8 sm:px-28 custom-container py-24 flex flex-col sm:flex-row gap-24">
+    <article className="px-8 sm:px-16 md:px-28 custom-container py-24 flex flex-col sm:flex-row gap-24">
       <div className="flex flex-col order-2 sm:order-1 p-4 bg-[rgba(0,_146,_68,_0.08)] rounded-2xl w-full ">
         <img src={image} className="h-full w-full" alt="A man pressing phone" />
       </div>

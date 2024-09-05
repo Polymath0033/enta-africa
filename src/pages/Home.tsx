@@ -1,5 +1,4 @@
-import { FC, useState } from "react";
-import { ConsultationForm } from "../components/ConsultationForm";
+import { FC, useContext } from "react";
 
 import { Hero } from "../components/Hero";
 import { RegisterCompany } from "../components/RegisterCompany";
@@ -10,31 +9,32 @@ import { ServiceOverview } from "../components/ServiceOverview";
 import { WhyChooseUs } from "../components/WhyUs";
 import { Testimonies } from "../components/Testimonies";
 import { FAQ } from "../components/FAQ";
+import StoreContext from "../store";
+import { ContactUs } from "../components/ContactUs";
 
 export const Home: FC = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [services, setServices] = useState<"businesses" | "registration">(
-    "businesses"
-  );
+  const storeCtx = useContext(StoreContext);
+
   const closeModal = () => {
-    setServices("businesses");
-    setShowModal(!showModal);
+    storeCtx.serviceHandler("businesses");
+    storeCtx.modalHandler();
   };
   const registerServicesHandler = () => {
-    setServices("registration");
-    setShowModal(true);
+    console.log("registerServicesHandler");
+    storeCtx.serviceHandler("registration");
+    storeCtx.modalHandler();
   };
   return (
     <>
-      {showModal && (
+      {/* {showModal && (
         <ConsultationForm closeModal={closeModal} services={services} />
-      )}
+      )} */}
 
       <Hero showConsultation={closeModal} />
       <CompanyImages />
       <ServiceOverview />
       <WhyChooseUs />
-      {/* <section className="px-8 sm:px-28 custom-container py-16 flex justify-center">
+      {/* <section className="px-8 sm:px-16 md:px-28 custom-container py-16 flex justify-center">
         <ul className="py-8 px-12 rounded-[48px] sm:rounded-[102px] flex flex-col justify-center items-center sm:flex-row gap-[10px] border-[##0092441F] border border-solid bg-[rgba(0,_146,_68,_0.04)]  ">
           <li className="flex flex-col gap-3 items-center justify-center sm:justify-between pb-8 sm:border-b-0 sm:pb-0 sm:pr-12 border-b sm:border-r border-[#E0E0E0]">
             <p className="font-semibold text-[38px] text-[#163930] ">8,523</p>
@@ -61,6 +61,7 @@ export const Home: FC = () => {
       <BeautifulAfrica showConsultation={closeModal} />
       <FAQ />
       <Testimonies />
+      <ContactUs />
       <AfricanExpansion />
     </>
   );

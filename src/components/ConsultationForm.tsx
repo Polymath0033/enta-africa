@@ -1,10 +1,10 @@
-import { FC, FormEvent, useReducer } from "react";
+import { FC, FormEvent, useReducer, useContext } from "react";
 import image from "../assets/consultation-image.png";
 import { Modal } from "./Modal";
 import { EntaButton } from "./EntaButton";
 import { set, ref } from "firebase/database";
 import { database } from "../config/firebase";
-
+import StoreContext from "../store";
 type InitialState = {
   name: string;
   companyName: string;
@@ -80,7 +80,7 @@ export const ConsultationForm: FC<{
 }> = ({ closeModal, services }) => {
   const [state, dispatch] = useReducer(reducer, createInitialState(services));
   const randomId = Math.random().toString(36).substring(7);
-
+  const storeCtx = useContext(StoreContext);
   const slugify = (text: string) => {
     return text
       .toString()
@@ -126,11 +126,13 @@ export const ConsultationForm: FC<{
         dispatch({ type: "loading", payload: false });
         console.log("Data saved successfully");
         dispatch({ type: "error", payload: null });
+        storeCtx.toastHandler("Consultation sent successfully", "success");
         closeModal();
       })
       .catch((error) => {
         dispatch({ type: "loading", payload: false });
-        dispatch({ type: "error", payload: "Failed to saved this data!" });
+        dispatch({ type: "error", payload: "Failed to send this data!" });
+        storeCtx.toastHandler("Failed to send this data!", "error");
         console.log("Data could not be saved." + error);
       });
   };
@@ -143,7 +145,7 @@ export const ConsultationForm: FC<{
         <div>
           <h1 className="font-semibold text-[28px] text-[#333] text-center">
             Get a{" "}
-            <span className="text-transparent bg-clip-text bg-[linear-gradient(91deg,_#E33E33_-0.95%,_#8C0900_100.32%)]">
+            <span className="text-transparent bg-clip-text bg-[linear-gradient(91deg,_#009244_-0.95%,_#004d40_100.32%)] ">
               Free
             </span>{" "}
             Consultation

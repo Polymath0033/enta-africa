@@ -3,7 +3,7 @@ import image from "../assets/blog-1.png";
 import { FC } from "react";
 export const ExpertTeam: FC = () => {
   return (
-    <article className="px-8 sm:px-28 py-24 bg-[rgba(127,_85,_218,_0.02)] ">
+    <article className="px-8 sm:px-16 md:px-28 py-24 bg-[rgba(127,_85,_218,_0.02)] ">
       <div className="flex custom-container flex-col sm:flex-row gap-24">
         <div className="flex flex-col p-4 bg-[rgba(0,_146,_68,_0.08)] rounded-2xl w-full ">
           <img
@@ -14,7 +14,7 @@ export const ExpertTeam: FC = () => {
         </div>
         <div className="flex flex-col gap-6 w-full justify-center items-start grow">
           <EntaUI text="our experts" />
-          <h2 className="text-base sm:text-xl !leading-[168.75%] text-[#333] font-normal  ">
+          <h2 className="text-base       sm:text-xl !leading-[168.75%] text-[#333] font-normal  ">
             A diverse team of professionals with expertise in various industries
             and markets.
           </h2>

@@ -21,7 +21,7 @@ export const About: React.FC = () => {
     <>
       <main>
         <section className="bg-light-primary bg-cover !max-h-[400px] h-[400px] md:h-[700px]">
-          <div className=" w-full h-full flex justify-center items-center flex-col custom-container px-8 sm:px-28 py-24">
+          <div className=" w-full h-full flex justify-center items-center flex-col custom-container px-8 sm:px-16 md:px-28 py-24">
             <h2 className="font-bold text-5xl text-primary ">About us</h2>
             <p className="text-sm sm:text-base text-center text-black !leading-[157.5%] font-medium mt-3">
               Stay informed with the latest news, insights, and updates from
@@ -34,7 +34,7 @@ export const About: React.FC = () => {
         <OurStory />
         <ExpertTeam />
         <div className="bg-light-primary text-gray-800">
-          <section className="custom-container px-8 sm:px-28 py-24">
+          <section className="custom-container px-8 sm:px-16 md:px-28 py-24">
             <div className="">
               <h2 className="text-2xl font-semibold mb-8 text-center">
                 Our Values
@@ -108,6 +108,17 @@ export const About: React.FC = () => {
               </a>
             </div>
           </section>
+        </div>
+        <div className="custom-container px-8 sm:px-16 md:px-28 py-24">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15853.08468733512!2d3.3561607304068524!3d6.6131916755737885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ab8f0ab3f3%3A0x98715e9598fa4c17!2s9%20Femi%20Ogun%20St%2C%20Off%2C%20Shangisha%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1725510867130!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            allowFullScreen={true}
+            title="Google Maps"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-[400px] md:h-[700px]"
+          ></iframe>
         </div>
       </main>
     </>

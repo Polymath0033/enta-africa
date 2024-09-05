@@ -36,7 +36,7 @@ export const Services: React.FC = () => {
   return (
     <main>
       <section className="bg-services bg-light-primary !max-h-[400px] h-[400px] md:h-[700px] bg-cover ">
-        <div className="flex flex-col justify-center items-center custom-container px-8 sm:px-28 py-24">
+        <div className="flex flex-col justify-center items-center custom-container px-8 sm:px-16 md:px-28 py-24">
           <h1 className=" font-bold text-6xl text-primary ">Our services</h1>
           <p className="">What we offer at Enta Afrika</p>
         </div>
@@ -44,7 +44,7 @@ export const Services: React.FC = () => {
 
       <section
         id="#incorporation-services"
-        className="custom-container px-8 sm:px-28 py-24"
+        className="custom-container px-8 sm:px-16 md:px-28 py-24"
       >
         <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
           Seamless Business Incorporation Across Africa
@@ -150,7 +150,7 @@ export const Services: React.FC = () => {
 
       <section
         id="#licenses-services"
-        className=" custom-container px-8 sm:px-28 py-24"
+        className=" custom-container px-8 sm:px-16 md:px-28 py-24"
       >
         <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
           Obtain Essential Licenses to Operate in Africa
@@ -248,7 +248,7 @@ export const Services: React.FC = () => {
       </section>
       <section
         id="#acquisition-services"
-        className=" custom-container px-8 sm:px-28 py-24"
+        className=" custom-container px-8 sm:px-16 md:px-28 py-24"
       >
         <h3 className="text-primary text-center text-4xl leading-2 font-semibold uppercase">
           Navigate Mergers and Acquisitions with Confidence
@@ -343,7 +343,7 @@ export const Services: React.FC = () => {
           </ul>
         </div>
       </section>
-      {/* <section className="custom-container px-8 sm:px-28 py-24">
+      {/* <section className="custom-container px-8 sm:px-16 md:px-28 py-24">
         <h2 className="text-primary text-5xl font-semibold uppercase">
           Incorporation services
         </h2>

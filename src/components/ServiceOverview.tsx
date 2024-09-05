@@ -5,7 +5,7 @@ import handshakeIcon from "../assets/handshake-solid.svg";
 import { Link } from "react-router-dom";
 export const ServiceOverview: React.FC = () => {
   return (
-    <div className="px-8 sm:px-28 custom-container py-24  mx-auto">
+    <div className="px-8 sm:px-16 md:px-28 custom-container py-24  mx-auto">
       <h1 className="text-4xl font-bold mb-8 text-center text-black">
         Service Overview
       </h1>

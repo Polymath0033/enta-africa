@@ -1,7 +1,7 @@
 import map from "../assets/map-green.svg";
 export const AfricanExpansion = () => {
   return (
-    <section className="mt-16 px-8 sm:px-28 py-24  border-b border-[#E8E9ED] bg-[rgba(0,_146,_68,_0.04)]">
+    <section className="mt-16 px-8 sm:px-16 md:px-28 py-24  border-b border-[#E8E9ED] bg-[rgba(0,_146,_68,_0.04)]">
       <div className="custom-container">
         <h2 className="text-2xl sm:text-[32px] capitalize text-[#333] !leading-[149.738%] font-semibold text-center ">
           Let us activate your{" "}

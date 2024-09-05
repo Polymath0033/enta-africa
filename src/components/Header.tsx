@@ -1,11 +1,14 @@
 import { EntaButton } from "./EntaButton";
 import { Logo } from "./Logo";
-import { FC, useState } from "react";
+import { FC, useState, useContext } from "react";
 import { Side } from "./Side";
 import { NavLink, Link } from "react-router-dom";
-export const Header: FC<{ closeModal?: () => void }> = ({ closeModal }) => {
+import StoreContext from "../store";
+export const Header: FC = () => {
   const [sidebar, setSidebar] = useState(false);
+  const storeCtx = useContext(StoreContext);
   const toggleSidebar = () => setSidebar(!sidebar);
+
   // const activeLink = (link: string) => {};
   const activeClass = (link: {
     isActive: boolean;
@@ -13,7 +16,7 @@ export const Header: FC<{ closeModal?: () => void }> = ({ closeModal }) => {
     isTransitioning: boolean;
   }) => (link.isActive ? "text-primary" : "text-black");
   return (
-    <header className="fixed top-0  left-0 w-screen z-10 px-8 sm:px-28 py-[26px] bg-white  border">
+    <header className="fixed top-0  left-0 w-screen z-10 px-8 sm:px-16 md:px-28 py-[26px] bg-white  border">
       <div className="custom-container flex justify-between items-center">
         <Link to="/" className="">
           <Logo />
@@ -43,7 +46,7 @@ export const Header: FC<{ closeModal?: () => void }> = ({ closeModal }) => {
           </ul>
         </nav>
         <EntaButton
-          onClick={closeModal}
+          onClick={storeCtx.modalHandler}
           value="Get started"
           className="hidden sm:block"
         />
