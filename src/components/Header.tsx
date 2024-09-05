@@ -9,7 +9,6 @@ export const Header: FC = () => {
   const storeCtx = useContext(StoreContext);
   const toggleSidebar = () => setSidebar(!sidebar);
 
-  // const activeLink = (link: string) => {};
   const activeClass = (link: {
     isActive: boolean;
     isPending: boolean;

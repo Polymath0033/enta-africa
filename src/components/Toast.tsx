@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import StoreContext from "../store";
 export const Toast = () => {
   const storeCtx = useContext(StoreContext);
