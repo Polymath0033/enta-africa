@@ -8,7 +8,6 @@ export const Header: FC = () => {
   const [sidebar, setSidebar] = useState(false);
   const storeCtx = useContext(StoreContext);
   const toggleSidebar = () => setSidebar(!sidebar);
-
   const activeClass = (link: {
     isActive: boolean;
     isPending: boolean;

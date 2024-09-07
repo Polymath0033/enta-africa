@@ -22,11 +22,13 @@ export const Testimonies: React.FC = () => {
         // ref={swipeRef}
         className={` overflow-x-scroll no-scrollbar mx-auto w-full`}
       >
-        <h3 className="text-4xl font-bold mb-8 text-center text-black">
+        <h3 className="text-3xl  md:text-4xl font-bold mb-8 text-center text-black">
           Our client success stories
         </h3>
         <div className={` overflow-x-scroll no-scrollbar mx-auto w-full`}>
-          <div className={`flex gap-4 mx-auto  w-max`}>
+          <div
+            className={`flex flex-col sm:flex-row gap-y-6 gap-4 mx-auto  w-max`}
+          >
             {testimonies.map((_, i) => (
               <article
                 key={i}

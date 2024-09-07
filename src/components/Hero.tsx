@@ -22,14 +22,14 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
         <div>
           <div className="font-semibold text-3xl sm:text-5xl mt-4 relative w-full sm:w-3/4 mx-auto !leading-[162.5%]">
             {/* country logo */}
-            <div className="absolute rounded-[49px] left-2 sm:-left-4 top-6 sm:top-[30%]">
+            <div className="absolute rounded-[49px] left-2 sm:-left-4 top-12 sm:top-[30%]">
               <img
                 src={kenya}
                 alt="Kenya"
                 className="w-full h-full !rounded-[49px]"
               />
             </div>
-            <div className="absolute right-2 sm:-right-4 top-6 sm:top-[30%]">
+            <div className="absolute right-2 sm:-right-4 top-12 sm:top-[30%]">
               <img
                 src={nigeria}
                 alt="Nigeria flag"
@@ -40,7 +40,7 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
               <h1 className="text-black text-center text-3xl sm:text-[38px]">
                 Unlock Your Business Potential in Africa.
               </h1>
-              <h2 className="text-center text-2xl sm:text-3xl  bg-clip-text text-transparent bg-[linear-gradient(91deg,_#009244_-0.95%,_#004d40_100.32%)]">
+              <h2 className="text-center mt-10 sm:mt-0 text-2xl sm:text-3xl  bg-clip-text text-transparent bg-[linear-gradient(91deg,_#009244_-0.95%,_#004d40_100.32%)]">
                 Incorporation, Licensing, and Acquisition Services Across the
                 Continent
               </h2>
@@ -67,7 +67,7 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
             <div className="absolute right-10 sm:right-24 -bottom-10">
               <img src={uganda} alt="Uganda flag" className="!rounded-[49px]" />
             </div>
-            <p className="text-[#101828] text-sm sm:text-lg font-normal w-full text-center !leading-[177.778%] ">
+            <p className="hidden sm:block text-[#101828] text-sm sm:text-lg font-normal w-full text-center !leading-[177.778%] ">
               At Enta Afrika, we’re passionate about helping businesses like
               yours establish and grow across Africa. Whether it’s
               incorporation, licensing, or acquisitions, we’re here to make the

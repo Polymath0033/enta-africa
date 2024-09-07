@@ -33,12 +33,14 @@ export const Home: FC = () => {
       scrollToElement();
     }, 100);
   }, [location.hash]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const closeModal = () => {
     storeCtx.serviceHandler("businesses");
     storeCtx.modalHandler();
   };
   const registerServicesHandler = () => {
-    console.log("registerServicesHandler");
     storeCtx.serviceHandler("registration");
     storeCtx.modalHandler();
   };

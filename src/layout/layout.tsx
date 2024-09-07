@@ -7,8 +7,9 @@ import StoreContext from "../store";
 import { Toast } from "../components/Toast";
 export const Layout: FC = () => {
   const storeCtx = useContext(StoreContext);
+
   return (
-    <>
+    <div>
       <Header />
       {storeCtx.showModal && (
         <ConsultationForm
@@ -22,6 +23,6 @@ export const Layout: FC = () => {
         <Outlet />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };

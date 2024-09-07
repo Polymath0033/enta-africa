@@ -109,7 +109,6 @@ export const ConsultationForm: FC<{
       return;
     }
 
-    console.log(state);
     dispatch({ type: "loading", payload: true });
     set(
       ref(
@@ -124,7 +123,7 @@ export const ConsultationForm: FC<{
       .then((e) => {
         console.log(e);
         dispatch({ type: "loading", payload: false });
-        console.log("Data saved successfully");
+
         dispatch({ type: "error", payload: null });
         storeCtx.toastHandler("Consultation sent successfully", "success");
         closeModal();

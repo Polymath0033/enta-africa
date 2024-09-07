@@ -23,7 +23,9 @@ import { useEffect } from "react";
 
 export const Services: React.FC = () => {
   const location = useLocation();
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
   useEffect(() => {
     const scrollToElement = () => {
       if (location.hash) {
@@ -34,9 +36,7 @@ export const Services: React.FC = () => {
       }
     };
 
-    scrollToElement(); // Scroll to the section on mount
-
-    // Retry scrolling after the component is fully rendered
+    scrollToElement();
     setTimeout(() => {
       scrollToElement();
     }, 100);

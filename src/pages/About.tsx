@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import handShakeIcon from "../assets/handshake-solid.svg";
 import starIcon from "../assets/star-solid.svg";
 import lightBulbIcon from "../assets/lightbulb-solid.svg";
@@ -18,6 +18,9 @@ export const About: React.FC = () => {
   //   const email = "oo@entaafrika.com";
   //   return `mailto:${email}?subject=${emailSubject}`;
   // }, [emailSubject]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
   return (
     <>
       <main>
