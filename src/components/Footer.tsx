@@ -42,7 +42,7 @@ export const Footer = () => {
           </div> */}
           <div className="flex flex-col gap-4  text-sm font-normal items-start sm:items-end ">
             <div className="flex gap-3 ">
-              <a href="https://twitter.com" target="_blank" rel="noopener">
+              <a href="https://x.com/EntaAfrika" target="_blank" rel="noopener">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -59,7 +59,11 @@ export const Footer = () => {
                 </svg>
                 {""}
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener">
+              <a
+                href="https://www.linkedin.com/company/enta-afrika"
+                target="_blank"
+                rel="noopener"
+              >
                 {""}
                 <svg
                   width="24"

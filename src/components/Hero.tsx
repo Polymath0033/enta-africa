@@ -22,14 +22,14 @@ export const Hero: FC<{ showConsultation: () => void }> = ({
         <div>
           <div className="font-semibold text-3xl sm:text-5xl mt-4 relative w-full sm:w-3/4 mx-auto !leading-[162.5%]">
             {/* country logo */}
-            <div className="absolute rounded-[49px] left-2 sm:-left-4 top-12 sm:top-[30%]">
+            <div className="absolute rounded-[49px] left-2 sm:-left-3 top-12 sm:top-[54%]">
               <img
                 src={kenya}
                 alt="Kenya"
                 className="w-full h-full !rounded-[49px]"
               />
             </div>
-            <div className="absolute right-2 sm:-right-4 top-12 sm:top-[30%]">
+            <div className="absolute right-2 sm:-right-3 top-12 sm:top-[54%]">
               <img
                 src={nigeria}
                 alt="Nigeria flag"
